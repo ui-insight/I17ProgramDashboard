@@ -2,6 +2,8 @@
 
 from fastapi import APIRouter
 
+from app.api.v1 import programs
+
 api_router = APIRouter()
 
 
@@ -11,6 +13,4 @@ async def health_check():
     return {"status": "healthy"}
 
 
-# Register resource routers below:
-# from app.api.v1 import users
-# api_router.include_router(users.router, prefix="/users", tags=["users"])
+api_router.include_router(programs.router, prefix="/programs", tags=["programs"])

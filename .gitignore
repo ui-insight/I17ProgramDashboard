@@ -31,6 +31,16 @@ frontend/dist/
 # Database
 *.db
 *.sqlite3
+postgres-data/
+
+# Raw data files — NEVER commit institutional data
+*.xlsx
+*.xls
+*.csv
+*.tsv
+data/
+imports/
+exports/
 
 # IDE
 .vscode/

@@ -1,4 +1,4 @@
-"""{{PROJECT_NAME}} — FastAPI Application Entry Point."""
+"""I-17 Program Dashboard — FastAPI Application Entry Point."""
 
 from contextlib import asynccontextmanager
 

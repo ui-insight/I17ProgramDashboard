@@ -3,14 +3,14 @@ import { describe, expect, it } from "vitest";
 import HomePage from "../src/pages/HomePage";
 
 describe("HomePage", () => {
-  it("renders the template heading and subtitle", () => {
+  it("renders the dashboard heading and subtitle", () => {
     render(<HomePage />);
 
     expect(
-      screen.getByRole("heading", { name: "{{PROJECT_NAME}}" }),
+      screen.getByRole("heading", { name: "I-17 Program Dashboard" }),
     ).toBeInTheDocument();
     expect(
-      screen.getByText("Built from the UI-Insight TEMPLATE-app"),
+      screen.getByText("SEVP Recertification Program Management"),
     ).toBeInTheDocument();
   });
 });

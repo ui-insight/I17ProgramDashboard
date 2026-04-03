@@ -1,7 +1,7 @@
-site_name: "{{PROJECT_NAME}} Documentation"
-site_description: "Documentation for {{PROJECT_NAME}}"
-repo_url: https://github.com/ui-insight/TEMPLATE-app
-repo_name: ui-insight/TEMPLATE-app
+site_name: "I-17 Program Dashboard Documentation"
+site_description: "Documentation for I-17 Program Dashboard"
+repo_url: https://github.com/ui-insight/I17ProgramDashboard
+repo_name: ui-insight/I17ProgramDashboard
 edit_uri: edit/main/docs/
 
 theme:

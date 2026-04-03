@@ -6,12 +6,15 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "{{PROJECT_NAME}}"
-    DATABASE_URL: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/app"
+    PROJECT_NAME: str = "I-17 Program Dashboard"
+    DATABASE_URL: str = (
+        "postgresql+asyncpg://postgres:postgres@localhost:5432/i17dashboard"
+    )
     SECRET_KEY: str = "change-me-in-production"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 480
     DEV_MODE: bool = True
     UPLOAD_DIR: str = "./uploads"
+    DATA_DIR: str = ""
     CORS_ORIGINS: str = '["http://localhost:5173", "http://localhost:9200"]'
 
     @property

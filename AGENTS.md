@@ -1,4 +1,4 @@
-# AGENTS.md — Agent Context for {{PROJECT_NAME}}
+# AGENTS.md — Agent Context for I-17 Program Dashboard
 
 > This file is the authoritative guide for AI coding agents working on this project.
 > It defines the tech stack, conventions, standards, and boundaries that agents must follow.
@@ -9,13 +9,24 @@
 
 ## Project Overview
 
-**{{PROJECT_NAME}}** is a web application for University of Idaho business operations,
-built with a React frontend and FastAPI backend. This project was scaffolded from
-the [TEMPLATE-app](https://github.com/ui-insight/TEMPLATE-app) repository template.
+**I-17 Program Dashboard** is a web application for University of Idaho (Facility Code: 11901012)
+to manage SEVP certification compliance. It tracks ~425 academic programs required for the
+Form I-17 recertification process submitted to ICE/DHS, enabling the university to enroll
+F-1 and M-1 nonimmigrant students and issue I-20 immigration documents.
 
-**Description**: _[Replace this with a brief description of what this application does]_
+This project was scaffolded from the [TEMPLATE-app](https://github.com/ui-insight/TEMPLATE-app) repository template.
 
-**Status**: _[Replace with current project status: planning / in development / alpha / beta / production]_
+**Status**: In development (MVP)
+
+## Data Security Policy
+
+**CRITICAL — All agents must follow these rules:**
+
+1. **Raw institutional data must NEVER be committed to the repository.** The `.gitignore` excludes all `.xlsx`, `.csv`, `.xls`, `.tsv` files and `data/`/`imports/`/`exports/` directories.
+2. **Raw institutional data must NEVER be sent to LLMs** unless explicitly authorized by the project owner.
+3. **Test fixtures must use synthetic/example data only.** Never use real program names, real catalog pages, or real institutional data in test files.
+4. **The application reads data from a configurable local path** (`DATA_DIR` environment variable). Never hardcode data file paths.
+5. **The MVP runs locally only** on the operator's machine. There is no cloud deployment.
 
 ---
 
